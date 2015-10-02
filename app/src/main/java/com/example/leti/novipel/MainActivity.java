@@ -7,10 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.transition.Scene;
+import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
     private Start btnStart;
     private TextView txt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,14 +22,16 @@ public class MainActivity extends AppCompatActivity {
         btnStart=(Start)findViewById(R.id.start);
 
 
-        btnStart.setOnClickListener(new View.OnClickListener() {
+       btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 btnStart.changeColor();
                 Intent intent = new Intent(MainActivity.this, TestActivity.class);
                 startActivity(intent);
-            }
-        });
+
+
+
+        }});
 
 
 

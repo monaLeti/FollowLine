@@ -97,7 +97,8 @@ public class Start extends View {
         canvas.drawCircle(width / 2, height / 2, height / 4, paint);
         paint.setColor(Color.WHITE);
         paint.setTextSize(width / 5);
-        canvas.drawText("START", width/5 , height/2, paint);
+        canvas.drawText("START", width/5 , (float)(0.56*height), paint);
+
 
     }
 
